@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void deletion(int[], int, int);
+void deletion(int[], int &, int);
 int main()
 {
     int n, x;
@@ -15,12 +15,12 @@ int main()
     cin >> x;
     deletion(a, n, x);
     for (int i = 0; i < n; i++)
-        {
-            cout << a[i] << " ";
-        }
+    {
+        cout << a[i] << " ";
+    }
     return 0;
 }
-void deletion(int b[], int m, int y)
+void deletion(int b[], int &m, int y)
 {
     int c = 0;
     for (int i = 0; i < m; i++)
