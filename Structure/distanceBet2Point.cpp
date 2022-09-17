@@ -8,7 +8,7 @@ struct point
 };
 float distance(point a, point b)
 {
-    return pow((pow(a.xcor - b.xcor, 2) - pow(a.ycor - b.ycor, 2)), 1 / 2);
+    return pow((pow(a.xcor - b.xcor, 2) + pow(a.ycor - b.ycor, 2)), 0.5);
 }
 int main()
 {
